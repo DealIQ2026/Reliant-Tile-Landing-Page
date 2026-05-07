@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reliant Tile Company</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+﻿    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="#home"
+          ><img
+            src="images/all-white-logo.png"
+            alt="Reliant Tile Company"
+            width="220"
+            height="56"
+            decoding="async"
+        /></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span aria-hidden="true"></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <ul class="nav__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#why">Why Choose Us</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+          <div class="nav__cta">
+            <a class="btn btn--primary" href="#contact">Get a Free Estimate</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- Hero: REPLACE: hero slide images (4) -->
+      <section class="hero section" aria-labelledby="hero-heading">
+        <div class="hero__grid">
+          <div class="hero__visual">
+            <div class="hero__slideshow" role="region" aria-label="Featured project photography">
+              <div class="hero__slide is-active">
+                <img
+                  src="images/hero-1.png"
+                  alt="Featured Reliant Tile project"
+                  width="800"
+                  height="1000"
+                  loading="eager"
+                />
+              </div>
+              <div class="hero__slide">
+                <img
+                  src="images/hero-2.png"
+                  alt="Featured Reliant Tile project"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                />
+              </div>
+              <div class="hero__slide">
+                <img
+                  src="images/hero-3.png"
+                  alt="Featured Reliant Tile project"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                />
+              </div>
+              <div class="hero__slide">
+                <img
+                  src="images/hero-4.png"
+                  alt="Featured Reliant Tile project"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="container hero__copy-wrap">
+            <div class="hero__copy">
+              <p class="eyebrow">FAMILY-OWNED AND OPERATED</p>
+              <h1 id="hero-heading">Reliable Service Built On Generations Of Experiance</h1>
+              <p>
+                Serving the Mid-South for over 60 years.
+              </p>
+              <div class="btn-row">
+                <a class="btn btn--primary" href="#contact">Get a Free Estimate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-band" aria-label="Experience and service area">
+        <p class="trust-band__title">Over 60 Years Of Experience</p>
+        <p class="trust-band__subtitle">Serving The Mid-South</p>
+      </section>
+
+      <section id="about" class="section section--alt">
+        <div class="container">
+          <div class="about-story">
+            <div class="about-story__intro">
+              <p class="eyebrow">OUR STORY</p>
+              <h2>Tradition Built Over Generations</h2>
+            </div>
+            <div class="about-story__visual">
+              <img
+                class="about-story__photo"
+                src="images/slideshow-image-1.png"
+                alt="Father and son looking over plans at the office, circa 1990."
+                width="800"
+                height="600"
+                loading="eager"
+              />
+              <p class="about-story__caption">
+                Father and son looking over plans at the office, circa 1990.
+              </p>
+            </div>
+            <div class="about-story__body">
+              <p>
+                Reliant Tile’s story goes back to the 1960s, when my grandfather began laying tile. He was known for hard work and dedication, spending nearly his entire life in the trade and building a reputation around showing up, working hard, and doing the job right. That same standard has been passed down through our family for generations.
+              </p>
+              <p>
+                My father was raised around the business, spending time on job sites and learning the trade firsthand. Over time, he followed the same path, working alongside my grandfather before eventually carrying the business forward himself. Years later, I found myself in a similar place — around the job sites, learning the standards that had been passed down before me. 
+              </p>
+              <p>
+                Today, Reliant Tile continues as a father-and-son duo, shaped by the same work ethic and attention to detail that started it all.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-intro">
+            <p class="eyebrow">OUR SERVICES</p>
+            <h2>Installation For Any Project</h2>
+            <p>
+              Reliant Tile handles everything from showers and backsplashes to floors, full remodels, and new
+              construction projects.
+            </p>
+          </div>
+          <div class="services-carousel">
+            <div class="services-carousel__viewport">
+              <button
+                class="services-carousel__arrow services-carousel__arrow--prev"
+                type="button"
+                aria-label="Previous service"
+              >
+                <span aria-hidden="true">&#8249;</span>
+              </button>
+              <div
+                class="services-carousel__track"
+                id="services-carousel-track"
+                role="region"
+                aria-roledescription="carousel"
+                aria-label="Tile services"
+                tabindex="0"
+              >
+            <article class="service-card">
+              <h3 class="service-card__title">Showers</h3>
+              <div class="service-card__media">
+                <img
+                  src="images/showers.png"
+                  alt="Shower tile installation"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <p class="service-card__desc">
+                Custom tile installation for walk-in showers and tub surrounds
+              </p>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">Tub Conversions</h3>
+              <div class="service-card__media">
+                <img
+                  src="images/showers.png"
+                  alt="Bathtub to walk-in shower conversion"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <p class="service-card__desc">
+                Turn your bathtub into a custom tiled walk-in shower with a cleaner, more open look.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">Backsplashes</h3>
+              <div class="service-card__media">
+                <img
+                  src="images/backsplash.png"
+                  alt="Kitchen backsplash tile"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <p class="service-card__desc">
+                Backsplash installation for kitchens, bathrooms, and laundry rooms.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">Tile Floors</h3>
+              <div class="service-card__media">
+                <img
+                  src="images/tile-floors.png"
+                  alt="Tile floor installation"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <p class="service-card__desc">
+                Tile flooring for bathrooms, kitchens, laundry rooms, entryways, and more.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">Laminate Floors</h3>
+              <div class="service-card__media">
+                <img
+                  src="images/laminate-floors.png"
+                  alt="Laminate floor installation"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <p class="service-card__desc">
+                Laminate flooring for living rooms, bedrooms, hallways, and everyday spaces.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">Remodels</h3>
+              <div class="service-card__media">
+                <img
+                  src="images/remodels.png"
+                  alt="Home remodel project"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <p class="service-card__desc">
+                We take care of home updates, repairs, tear-outs, and full remodels.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">New Construction</h3>
+              <div class="service-card__media">
+                <img
+                  src="images/new-construction.png"
+                  alt="New home construction"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <p class="service-card__desc">
+                We work on new homes, additions, and new projects of any size.
+              </p>
+            </article>
+              </div>
+              <button
+                class="services-carousel__arrow services-carousel__arrow--next"
+                type="button"
+                aria-label="Next service"
+              >
+                <span aria-hidden="true">&#8250;</span>
+              </button>
+            </div>
+            <div class="services-carousel__dots" id="services-carousel-dots" role="tablist" aria-label="Service slides">
+              <button type="button" class="services-carousel__dot is-active" aria-label="Slide 1: Showers" aria-selected="true" role="tab"></button>
+              <button type="button" class="services-carousel__dot" aria-label="Slide 2: Bathtub to Shower Conversions" role="tab"></button>
+              <button type="button" class="services-carousel__dot" aria-label="Slide 3: Backsplashes" role="tab"></button>
+              <button type="button" class="services-carousel__dot" aria-label="Slide 4: Tile Floors" role="tab"></button>
+              <button type="button" class="services-carousel__dot" aria-label="Slide 5: Laminate Floors" role="tab"></button>
+              <button type="button" class="services-carousel__dot" aria-label="Slide 6: Remodels" role="tab"></button>
+              <button type="button" class="services-carousel__dot" aria-label="Slide 7: New Construction" role="tab"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section section--alt">
+        <div class="container">
+          <div class="section-intro">
+            <p class="eyebrow">Our Work</p>
+            <h2>A Look At Our Recent Projects</h2>
+          </div>
+        </div>
+
+        <div
+          class="work-carousel work-carousel--sliding"
+          id="work-carousel"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Recent tile projects"
+        >
+          <div class="work-carousel__viewport">
+            <button
+              type="button"
+              class="work-carousel__arrow work-carousel__arrow--overlay work-carousel__arrow--prev"
+              aria-label="Previous slide"
+            >
+              <span aria-hidden="true">&#8249;</span>
+            </button>
+            <div class="work-carousel__mask" id="work-carousel-mask">
+              <div
+                class="work-carousel__track"
+                id="work-carousel-track"
+                role="list"
+              ></div>
+            </div>
+            <button
+              type="button"
+              class="work-carousel__arrow work-carousel__arrow--overlay work-carousel__arrow--next"
+              aria-label="Next slide"
+            >
+              <span aria-hidden="true">&#8250;</span>
+            </button>
+          </div>
+          <div class="work-carousel__controls">
+            <div
+              class="work-carousel__dots"
+              id="work-carousel-dots"
+              role="tablist"
+              aria-label="Project slides"
+            ></div>
+          </div>
+        </div>
+
+        <template id="work-carousel-data">
+            <figure
+              data-src="images/slide-1.png"
+              data-alt="Placeholder gallery: shower tile"
+              data-label="Showers"
+            ></figure>
+            <figure
+              data-src="images/photo-2.png"
+              data-alt="Placeholder gallery: floor tile"
+              data-label="Floors"
+            ></figure>
+            <figure
+              data-src="images/photo-3.png"
+              data-alt="Placeholder gallery: backsplash"
+              data-label="Backsplashes"
+            ></figure>
+            <figure
+              data-src="images/photo-4.png"
+              data-alt="Placeholder gallery: bathroom"
+              data-label="Bathrooms"
+            ></figure>
+            <figure
+              data-src="images/photo-5.png"
+              data-alt="Placeholder gallery: shower"
+              data-label="Showers"
+            ></figure>
+            <figure
+              data-src="images/photo-6.png"
+              data-alt="Placeholder gallery: floor"
+              data-label="Floors"
+            ></figure>
+            <figure
+              data-src="images/photo-7.png"
+              data-alt="Placeholder gallery: backsplash detail"
+              data-label="Backsplashes"
+            ></figure>
+            <figure
+              data-src="images/photo-8.png"
+              data-alt="Placeholder gallery: bathroom remodel"
+              data-label="Bathrooms"
+            ></figure>
+          </template>
+      </section>
+
+      <section id="why" class="section">
+        <div class="container">
+          <div class="section-intro">
+            <p class="eyebrow">Why choose us</p>
+            <h2>Experience You Can Count On</h2>
+          </div>
+          <div class="features-grid">
+            <article class="feature-card">
+              <span class="feature-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </span>
+              <h3>Family Owned</h3>
+              <p>
+                A family-owned business with years of experience passed down through generations.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </span>
+              <h3>Reliability</h3>
+              <p>We take pride in doing the job right and standing behind our work.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9" />
+                  <path d="m18 15 4-4" />
+                  <path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" />
+                </svg>
+              </span>
+              <h3>We Handle It All</h3>
+              <p>From small updates to larger projects, we’re happy to take on the job.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section section--alt">
+        <div class="container">
+          <div class="section-intro">
+            <p class="eyebrow">How it Works</p>
+            <h2>3 Simple Steps</h2>
+          </div>
+          <div class="process-steps">
+            <article class="process-step">
+              <h3>Contact Us</h3>
+              <p>Tell us about the work you need done.</p>
+            </article>
+            <article class="process-step">
+              <h3>Get Your Estimate</h3>
+              <p>We’ll come out, get measurements, and send you an estimate.</p>
+            </article>
+            <article class="process-step">
+              <h3>We Get To Work</h3>
+              <p>Once everything is approved, we’ll schedule the job and get started.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section section">
+        <div class="container contact-grid">
+          <div class="contact-aside">
+            <p class="eyebrow">Contact Us</p>
+            <h2>Need Work Done?</h2>
+            <p>
+              Reach out to us and we’ll get back with you ASAP.
+            </p>
+            <div class="service-area">
+              <strong>Prefer to call?</strong>
+              Call us at
+              <a href="tel:+19017344020">(901) 734-4020</a>.
+            </div>
+          </div>
+          <div class="contact-card">
+            <form
+              class="estimate-form"
+              action="https://formspree.io/f/mzdoaabg"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Website contact — Reliant Tile Company"
+              />
+              <input
+                type="text"
+                name="_gotcha"
+                class="estimate-form__gotcha"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Tell us about your project…"></textarea>
+              </div>
+              <div class="form-group form-group--file">
+                <label for="photos">Photos (optional)</label>
+                <input
+                  id="photos"
+                  name="photos"
+                  type="file"
+                  accept="image/*"
+                  multiple
+                />
+                <p class="form-hint">
+                  Optional. You can attach several images (JPG, PNG, etc.). Larger files may take a
+                  moment to send.
+                </p>
+              </div>
+              <button class="btn btn--primary btn--block" type="submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="#home"
+            ><img
+              src="images/all-white-logo.png"
+              alt="Reliant Tile Company"
+              width="220"
+              height="56"
+              decoding="async"
+              loading="lazy"
+          /></a>
+          <p>
+            Professional tile installation, remodels, flooring, and custom tile work for homeowners
+            and builders in the Mid-South.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <!-- REPLACE: real phone and email when available -->
+            <li><a href="tel:+19015550123">(901) 555-0123</a></li>
+            <li><a href="mailto:hello@relianttileco.com">hello@relianttileco.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service area</h4>
+          <ul>
+            <li>Memphis &amp; surrounding communities</li>
+            <li>Germantown · Collierville · Cordova</li>
+            <li>Arlington · Lakeland · Mid-South</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> Reliant Tile Company. All rights reserved.</p>
+      </div>
+
+    </footer>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "reliant-tile-co-page",
+  "private": true,
+  "description": "Static landing page for Reliant Tile Company",
+  "scripts": {
+    "predev": "node scripts/build-index-from-content.js",
+    "dev": "node scripts/print-lan-url.js 3000 && npx --yes http-server public -p 3000 -a 0.0.0.0 -c-1"
+  }
+}
