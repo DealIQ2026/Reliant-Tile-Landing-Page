@@ -5,7 +5,10 @@ const root = path.join(__dirname, "..");
 const bodyPath = path.join(root, "content", "home-body.html");
 const outPath = path.join(root, "public", "index.html");
 
-const body = fs.readFileSync(bodyPath, "utf8");
+const body = fs
+  .readFileSync(bodyPath, "utf8")
+  .replace(/^\uFEFF/, "")
+  .replace(/\uFEFF/g, "");
 
 const html = `<!DOCTYPE html>
 <html lang="en">
