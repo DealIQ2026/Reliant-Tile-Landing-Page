@@ -33,13 +33,13 @@ const html = `<!DOCTYPE html>
   <meta property="og:url" content="${SITE_ORIGIN}/" />
   <meta property="og:title" content="${OG_TITLE}" />
   <meta property="og:description" content="${OG_DESCRIPTION}" />
-  <meta property="og:image" content="${SITE_ORIGIN}/favicon.png" />
+  <meta property="og:image" content="${SITE_ORIGIN}/og-image.png" />
   <meta property="og:image:alt" content="Reliant Tile Co. logo" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${OG_TITLE}" />
   <meta name="twitter:description" content="${OG_DESCRIPTION}" />
-  <meta name="twitter:image" content="${SITE_ORIGIN}/favicon.png" />
+  <meta name="twitter:image" content="${SITE_ORIGIN}/og-image.png" />
   <link rel="stylesheet" href="/css/styles.css" />
   <script type="application/ld+json">
 ${JSON.stringify(
@@ -48,7 +48,7 @@ ${JSON.stringify(
     "@type": "LocalBusiness",
     name: OG_TITLE,
     url: `${SITE_ORIGIN}/`,
-    image: `${SITE_ORIGIN}/favicon.png`,
+    image: `${SITE_ORIGIN}/og-image.png`,
     description: OG_DESCRIPTION,
     email: "hello@relianttileco.com",
     telephone: "+1-901-734-4020",
