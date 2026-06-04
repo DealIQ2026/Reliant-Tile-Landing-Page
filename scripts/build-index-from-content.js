@@ -50,7 +50,7 @@ ${JSON.stringify(
     url: `${SITE_ORIGIN}/`,
     image: `${SITE_ORIGIN}/og-image.png`,
     description: OG_DESCRIPTION,
-    email: "hello@relianttileco.com",
+    email: "business@relianttileco.com",
     telephone: "+1-901-734-4020",
     address: {
       "@type": "PostalAddress",
