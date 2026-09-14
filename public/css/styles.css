@@ -5,8 +5,8 @@
 
 :root {
   --color-black: #0c0c0c;
-  --color-green: #005b52;
-  --color-green-hover: #004740;
+  --color-green: #0058ff;
+  --color-green-hover: #0046cc;
   --color-bg: #fafaf8;
   --color-bg-white: #ffffff;
   --color-surface: #ffffff;
@@ -121,7 +121,7 @@ p:last-child {
 /* Our services, Why choose us — warm section fill */
 #services,
 #why {
-  background: #f4f2ed;
+  background: #edf3ff;
 }
 
 .eyebrow {
@@ -136,7 +136,7 @@ p:last-child {
 
 .section-intro .eyebrow,
 .contact-aside .eyebrow {
-  color: #005b52;
+  color: #0058ff;
 }
 
 .section-intro {
@@ -228,7 +228,7 @@ p:last-child {
   top: 0;
   z-index: 100;
   height: var(--header-height);
-  background: #005b52;
+  background: #0a042e;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -247,15 +247,15 @@ p:last-child {
 }
 
 .site-header .nav__cta .btn--primary {
-  background: #fff;
-  color: var(--color-green);
-  border-color: #fff;
+  background: var(--color-green);
+  color: #fff;
+  border-color: var(--color-green);
 }
 
 .site-header .nav__cta .btn--primary:hover {
-  background: rgba(255, 255, 255, 0.92);
-  border-color: rgba(255, 255, 255, 0.92);
-  color: var(--color-green-hover);
+  background: var(--color-green-hover);
+  border-color: var(--color-green-hover);
+  color: #fff;
 }
 
 .site-header__inner {
@@ -308,7 +308,7 @@ p:last-child {
 }
 
 .nav__links a:hover {
-  background: rgba(0, 91, 82, 0.08);
+  background: rgba(0, 88, 255, 0.08);
   color: var(--color-green);
 }
 
@@ -414,7 +414,7 @@ p:last-child {
   }
 
   .site-header .nav__links a:hover {
-    background: rgba(0, 91, 82, 0.08);
+    background: rgba(0, 88, 255, 0.08);
     color: var(--color-green);
   }
 
@@ -566,7 +566,7 @@ p:last-child {
 .trust-band {
   min-height: clamp(4.5rem, 12vw, 6.5rem);
   padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 4vw, 1.5rem);
-  background: #f4f2ed;
+  background: #edf3ff;
   border-bottom: 1px solid var(--color-border);
   text-align: center;
   display: flex;
@@ -642,7 +642,7 @@ p:last-child {
 }
 
 .service-card:hover {
-  border-color: rgba(0, 91, 82, 0.25);
+  border-color: rgba(0, 88, 255, 0.25);
   box-shadow: var(--shadow-md);
 }
 
@@ -803,12 +803,12 @@ p:last-child {
 
 .work-carousel__arrow--overlay:hover {
   background: #fff;
-  color: #005b52;
-  border-color: rgba(0, 91, 82, 0.25);
+  color: #0058ff;
+  border-color: rgba(0, 88, 255, 0.25);
 }
 
 .work-carousel__arrow--overlay:focus-visible {
-  outline: 2px solid #005b52;
+  outline: 2px solid #0058ff;
   outline-offset: 2px;
 }
 
@@ -842,7 +842,7 @@ p:last-child {
 }
 
 .work-carousel__dot.is-active {
-  background: #005b52;
+  background: #0058ff;
   transform: scale(1.15);
 }
 
@@ -1066,7 +1066,7 @@ p:last-child {
 
 /* ========== Contact ========== */
 .contact-section {
-  background: #f4f2ed;
+  background: #edf3ff;
   border-block: 1px solid var(--color-border);
 }
 
@@ -1129,7 +1129,7 @@ p:last-child {
   font-size: 1rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  background: var(--color-bg);
+  background: #edf3ff;
   color: var(--color-black);
   transition: border-color 0.2s, box-shadow 0.2s;
 }
@@ -1139,7 +1139,7 @@ p:last-child {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--color-green);
-  box-shadow: 0 0 0 3px rgba(0, 91, 82, 0.15);
+  box-shadow: 0 0 0 3px rgba(0, 88, 255, 0.15);
 }
 
 .form-group textarea {
@@ -1170,9 +1170,9 @@ p:last-child {
 .service-area {
   margin-top: 1.5rem;
   padding: 1rem 1.15rem;
-  background: rgba(0, 91, 82, 0.08);
+  background: rgba(0, 88, 255, 0.08);
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(0, 91, 82, 0.15);
+  border: 1px solid rgba(0, 88, 255, 0.15);
   font-size: 0.92rem;
   color: var(--color-muted);
   line-height: 1.55;
