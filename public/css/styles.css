@@ -26,7 +26,9 @@
   --shadow-md: 0 8px 30px rgba(12, 12, 12, 0.08);
   --shadow-lg: 0 20px 50px rgba(12, 12, 12, 0.12);
 
+  --banner-height: 2.125rem;
   --header-height: 4.5rem;
+  --site-top-height: calc(var(--banner-height) + var(--header-height));
   --container: min(1120px, 92vw);
   --section-y: clamp(3.5rem, 8vw, 6rem);
 }
@@ -42,7 +44,7 @@ html {
   padding: 0;
   scroll-behavior: smooth;
   /* Offset anchor jumps so sticky header doesn’t cover section tops */
-  scroll-padding-top: var(--header-height);
+  scroll-padding-top: var(--site-top-height);
 }
 
 body {
@@ -223,10 +225,73 @@ p:last-child {
 }
 
 /* ========== Header ========== */
-.site-header {
+.site-header-wrap {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.top-banner {
+  height: var(--banner-height);
+  background: var(--color-green);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.top-banner__inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.top-banner__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.top-banner__icon {
+  width: 0.9rem;
+  height: 0.9rem;
+  flex-shrink: 0;
+}
+
+.top-banner__link--phone .top-banner__icon path {
+  fill: currentColor;
+  stroke: #fff;
+  stroke-width: 1.75px;
+  stroke-linejoin: round;
+  paint-order: stroke fill;
+}
+
+.top-banner__link:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.top-banner__link--phone {
+  font-weight: 800;
+}
+
+.top-banner__link--email {
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+@media (max-width: 540px) {
+  .top-banner__link {
+    font-size: 0.72rem;
+  }
+}
+
+.site-header {
   height: var(--header-height);
   background: #0a042e;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -385,7 +450,7 @@ p:last-child {
 
   .nav {
     position: fixed;
-    inset: var(--header-height) 0 auto 0;
+    inset: var(--site-top-height) 0 auto 0;
     background: var(--color-bg);
     border-bottom: 1px solid var(--color-border);
     padding: 1rem;
