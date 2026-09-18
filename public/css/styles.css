@@ -235,6 +235,7 @@ p:last-child {
   height: var(--banner-height);
   background: var(--color-green);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
 }
 
 .top-banner__inner {
@@ -248,18 +249,26 @@ p:last-child {
 .top-banner__link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.45rem;
   font-size: 0.875rem;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
   white-space: nowrap;
+  max-width: 100%;
+  line-height: 1;
 }
 
 .top-banner__icon {
-  width: 0.9rem;
-  height: 0.9rem;
-  flex-shrink: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  max-width: 1rem;
+  max-height: 1rem;
+  flex: 0 0 1rem;
 }
 
 .top-banner__link--phone .top-banner__icon path {
@@ -276,6 +285,7 @@ p:last-child {
 
 .top-banner__link--phone {
   font-weight: 600;
+  color: #fff;
 }
 
 .top-banner__phone-number {
@@ -283,19 +293,19 @@ p:last-child {
   letter-spacing: 0.04em;
 }
 
-.top-banner__link--phone .top-banner__icon {
-  width: 1rem;
-  height: 1rem;
-}
-
 @media (max-width: 540px) {
   .top-banner__link {
     font-size: 0.78rem;
   }
 
-  .top-banner__link--phone .top-banner__icon {
+  .top-banner__icon {
     width: 0.95rem;
     height: 0.95rem;
+    min-width: 0.95rem;
+    min-height: 0.95rem;
+    max-width: 0.95rem;
+    max-height: 0.95rem;
+    flex-basis: 0.95rem;
   }
 }
 
